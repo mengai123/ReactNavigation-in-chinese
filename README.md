@@ -11,4 +11,6 @@
 ### Getting Started
 
 
-[Introduction](Getting%20Started/Introduction.md)
+[Introduction](Getting%20Started/Introduction.md)（已翻译）
+
+[Quick Start](Getting%20Started/Quick%20Start.md)（已翻译）
