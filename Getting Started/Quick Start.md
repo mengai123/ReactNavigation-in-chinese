@@ -6,13 +6,13 @@
 
 ### 使用npm安装
 
-```
+```shell
 npm install --save react-navigation
 ```
 
 ### 使用Yarn安装
 
-```
+```shell
 yarn add react-navigation
 ```
 
@@ -26,7 +26,7 @@ yarn add react-navigation
 ## 创建一个StackNavigator
 
 `StackNavigator`是最常见的导航形式，所以我们将其用作基本演示。从创建一个`StackNavigator`开始。
-```
+```javascript
 import { StackNavigator } from 'react-navigation';
 
 const RootNavigator = StackNavigator({
@@ -37,7 +37,7 @@ export default RootNavigator;
 ```
 
 然后，我们可以为`StackNavigator`添加页面，每个键代表一个页面。
-```
+```javascript
 import React from 'react';
 import { View, Text } from 'react-native';
 import { StackNavigator } from 'react-navigation';
@@ -67,7 +67,7 @@ export default RootNavigator;
 ```
 
 现在让我们为导航栏添加一个标题。
-```
+```javascript
 ...
 
 const RootNavigator = StackNavigator({
@@ -91,7 +91,7 @@ export default RootNavigator;
 最后，我们应该能从`Home`页面导航到`Details`页面。当你使用导航器注册一个组件时，组件将会添加一个`navigation`属性。这个`navigation`属性驱动如何在不同页面之间切换。
 
 要从`Home`页面切换到`Details`页面，我们将要使用`navigation.navigate`，如下所示：
-```
+```javascript
 ...
 import { View, Text, Button } from 'react-native';
 
@@ -110,7 +110,7 @@ const HomeScreen = ({ navigation }) => (
 
 这样就可以了！这是使用`StackNavigator`和`React Navigation`的一个整体基础。下面是这个例子的完整代码：
 
-```
+```javascript
 import React from 'react';
 import { View, Text, Button } from 'react-native';
 import { StackNavigator } from 'react-navigation'; // 1.0.0-beta.14
@@ -152,7 +152,7 @@ export default RootNavigator;
 ## 创建一个TabNavigator
 
 要开始使用`TabNavigator`，首先要导入`TabNavigator`，并且创建一个新的`RootTabs`组件。
-```
+```javascript
 import { TabNavigator } from 'react-navigation';
 
 const RootTabs = TabNavigator({
@@ -163,7 +163,7 @@ export default RootTabs;
 ```
 
 然后，我们需要创建一些页面，并将其添加到我们的`TabNavigator`。
-```
+```javascript
 import React from 'react';
 import { View, Text } from 'react-native';
 import { TabNavigator } from 'react-navigation';
@@ -195,7 +195,7 @@ export default RootTabs;
 快成功了！现在让我们来为标签栏设置一个标签和图标。
 > 我们将在示例中使用[react-native-vector-icons](https://github.com/oblador/react-native-vector-icons)组件，如果你的项目中还没有安装这个组件，那么请安装它。
 
-```
+```javascript
 ...
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
