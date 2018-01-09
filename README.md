@@ -1,26 +1,25 @@
 # React Navigation组件中文翻译
 
+内容为[React Navigation官方文档](https://reactnavigation.org/docs/intro/)翻译。
+
 #### 说明：
 
 个人比较喜欢`React Navigation`这个导航组件，经常看英文文档，眼都看花了。So, 一冲动之下翻译了此文！:sunglasses:
 
-在翻译过程中，部分单词和长句经过仔细推敲，尽最大努力保持原汁原味。
+在翻译过程中，部分单词和长句经过仔细推敲，尽最大努力保持原汁原味。仅供学习交流。QQ:762614600
 
 本人英语水平和技术水平有限，难免会出现错误或不合理地方，欢迎Issues。
 
-
-内容为[React Navigation官方文档](https://reactnavigation.org/docs/intro/)翻译，仅供学习交流。QQ:762614600
-
-已翻译部分，可以直接点击链接查看翻译。
+**转载请标明出处**
+---
 
 **另外**：由于是本人一人翻译，思维难免有局限，需要一名小伙伴帮忙校对，现征求一位喜欢`React Navigation`组件的小伙伴，与我一起努力，完成翻译，欢迎联系上方QQ。
 
 
-```diff
-- 转载请标明出处 - 
-```
-
 # 目录 #
+
+
+已翻译部分，可以直接点击链接查看翻译。
 
 
 ## Getting Started
