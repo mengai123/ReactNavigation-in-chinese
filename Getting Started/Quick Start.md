@@ -4,16 +4,6 @@
 
 *译者注：为了方便理解，下文中将所有`screen`翻译为`页面`*
 
-## 目录
-[安装](#安装)
-
-[创建一个StackNavigator](#创建一个StackNavigator)
-
-[创建一个TabNavigator](#创建一个TabNavigator)
-
-
-## 安装
-
 ### 使用npm安装
 
 ```
