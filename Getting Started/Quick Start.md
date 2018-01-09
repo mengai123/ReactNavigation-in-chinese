@@ -88,7 +88,7 @@ const RootNavigator = StackNavigator({
 export default RootNavigator;
 ```
 
-最后，我们应该能从`Home`页面导航到`Details`页面。当你使用导航器注册一个组件时，组件将会添加一个`navigation`属性。这个`navigation`属性驱动如何在不同页面之间切换。
+到此，我们应该能从`Home`页面导航到`Details`页面。当你使用导航器注册一个组件时，组件将会添加一个`navigation`属性。这个`navigation`属性驱动如何在不同页面之间切换。
 
 要从`Home`页面切换到`Details`页面，我们将要使用`navigation.navigate`，如下所示：
 ```javascript
