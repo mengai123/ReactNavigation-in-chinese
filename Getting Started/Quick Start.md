@@ -4,13 +4,23 @@
 
 *译者注：为了方便理解，下文中将所有`screen`翻译为`页面`*
 
-## 使用npm安装
+## 目录
+[安装](#安装)
+
+[创建一个StackNavigator](#创建一个StackNavigator)
+
+[创建一个TabNavigator](#创建一个TabNavigator)
+
+
+## 安装
+
+### 使用npm安装
 
 ```
 npm install --save react-navigation
 ```
 
-## 使用Yarn安装
+### 使用Yarn安装
 
 ```
 yarn add react-navigation
@@ -23,7 +33,7 @@ yarn add react-navigation
 * `DrawerNavigator` - 用于设置带抽屉导航的页面。
 
 
-## 创建一个`StackNavigator`
+## 创建一个StackNavigator
 
 `StackNavigator`是最常见的导航形式，所以我们将其用作基本演示。从创建一个`StackNavigator`开始。
 ```
@@ -149,7 +159,7 @@ const RootNavigator = StackNavigator({
 export default RootNavigator;
 ```
 
-## 创建一个`TabNavigator`
+## 创建一个TabNavigator
 
 要开始使用`TabNavigator`，首先要导入`TabNavigator`，并且创建一个新的`RootTabs`组件。
 ```
