@@ -2,7 +2,11 @@
 
 说明：
 
-内容为[React Navigation官方文档](https://reactnavigation.org/docs/intro/)翻译，仅供学习交流
+个人比较喜欢`React Navigation`这个导航组件，经常看英文文档，看的眼都花了，
+
+内容为[React Navigation官方文档](https://reactnavigation.org/docs/intro/)翻译，仅供学习交流。QQ:762614600
+
+已翻译部分，可以直接点击链接查看翻译。
 
 转载需要标明出处。
 
