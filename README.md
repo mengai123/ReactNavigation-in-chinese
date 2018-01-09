@@ -1,6 +1,6 @@
 # React Navigation组件中文翻译
 
-内容为[React Navigation官方文档](https://reactnavigation.org/docs/intro/)翻译。
+内容为[React Navigation官方文档](https://reactnavigation.org/docs/intro/)中文翻译。
 
 #### 说明：
 
