@@ -4,6 +4,8 @@
 
 内容为[React Navigation官方文档](https://reactnavigation.org/docs/intro/)翻译，仅供学习交流
 
+转载需要标明出处。
+
 
 # 目录 #
 
