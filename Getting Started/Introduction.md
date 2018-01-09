@@ -12,7 +12,7 @@
 
 如果你已经熟悉React Native，那么你可以在很短的时间内上手使用`React Navigation`。
 
-1. [快速入门](Getting%20Started/Quick%20Start.md) 通过演示`StackNavigator`，`TabNavigator`和`DrawerNavigator`，快速掌握React Navigation API。
+1. [快速入门](Quick%20Start.md) 通过演示`StackNavigator`，`TabNavigator`和`DrawerNavigator`，快速掌握React Navigation API。
 
 2. 简单的应用程序 通过创建一个新的React Native项目，安装`React Navigation`，创建第一个导航器，以及学习如何与之交互，进而深入了解`React Navigation`的基础知识。
 
