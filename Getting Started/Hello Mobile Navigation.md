@@ -2,7 +2,7 @@
 
 让我们使用`React Navigation`为Android和iOS构建一个简单的聊天类应用程序。
 
-##设置和安装
+## 设置和安装
 
 首先，在开始之前，确保你已经设置好了[React Native](https://reactnative.cn/docs/0.51/getting-started.html#content)，接下来，创建一个新的项目，并添加`react-navigation`:
 
@@ -38,7 +38,8 @@ npm start
 确认你能成功看到在iOS/Android上运行的示例应用程序：
 
 
-
-
-
+<figure class="half">
+    <img src="images/bare-project-iphone.png" width="50%" height="50%">
+    <img src="images/bare-project-android.png" width="50%" height="50%">  
+</figure>
 
