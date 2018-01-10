@@ -96,7 +96,6 @@ const SimpleApp = StackNavigator({
 ```
 
 在这种情况下，`NavigatorWrappingScreen`不是一个导航器，它只是将导航器作为其渲染的一部分。
-> 译注：`NavigatorWrappingScreen`代表组件，其中包含一个导航器。
 
 ```javascript
 class NavigatorWrappingScreen extends React.Component {
@@ -111,9 +110,9 @@ class NavigatorWrappingScreen extends React.Component {
 }
 ```
 
+如果上述代码运行后，界面是空白，就把`<View>`改成`<View style={{flex: 1}}>`。
 
-如果此导航器渲染空白页面，就把
 
-
+要把`MainScreenNavigator`连接到
 
 
