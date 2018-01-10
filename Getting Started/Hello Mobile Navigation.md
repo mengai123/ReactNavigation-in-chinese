@@ -178,9 +178,16 @@ export const SimpleApp = StackNavigator({
 
 现在你可以导航到你的新页面，并且能够返回:
 
+<br>
 
+<div align="center">
+    <img src="images/navigate-to-chat-android.gif" width="40%" height="40%">
+    <img src="images/navigate-to-chat-ios.gif" width="40%" height="40%">   
+</div>
 
+<br>
 
+## 传递参数
 
 
 
