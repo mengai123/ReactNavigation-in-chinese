@@ -39,7 +39,7 @@
 
 * [Hello Mobile Navigation](Getting%20Started/Hello%20Mobile%20Navigation.md)（已翻译）
 
-* [Nesting Navigators](Getting%20Started/Nesting%20Navigators.md)（未翻译）
+* [Nesting Navigators](Getting%20Started/Nesting%20Navigators.md)（已翻译）
 
 * [Configuring Headers](Getting%20Started/Configuring%20Headers.md)（未翻译）
 
