@@ -37,6 +37,6 @@ npm start
 
 确认你能成功看到在iOS/Android上运行的示例应用程序：
 
-<img align="right" src="images/Android@2x.png" width="40%" height="40%"><img src="images/iOS@2x.png" width="40%" height="40%">  
-<img align="left" src="images/iOS@2x.png" width="40%" height="40%"><img src="images/iOS@2x.png" width="40%" height="40%"> 
+<img align="left" src="images/Android@2x.png" width="40%" height="40%">
+<img align="right" src="images/iOS@2x.png" width="40%" height="40%">
 
