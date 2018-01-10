@@ -37,10 +37,11 @@ npm start
 
 确认你能成功看到在iOS/Android上运行的示例应用程序：
 
-<div align="center">
-  <img src="images/Android@2x.png" width="40%" height="40%">
-  <img src="images/iOS@2x.png" width="40%" height="40%">
+<div>
+  <img src="images/Android@2x.png" width="40%" height="40%">
+  <img src="images/iOS@2x.png" width="40%" height="40%">
 </div>
+
 
 我们希望在iOS和Android上代码共享，所以删除`index.js`里的内容（如果你使用的是0.49之前的React Native，你需要删除`index.ios.js`和`index.android.js`里的内容），取而代之的是`import './App';`。此后，为了实现应用，需要创建新的文件`App.js`（如果你使用的是`create-react-native-app`命令创建的应用，这一步已经自动完成了）。
 
@@ -111,8 +112,8 @@ const styles = StyleSheet.create({
 现在iPhone和Android应用程序应该会显示相同的页面：
 
 <div align="center">
-    <img align="left" src="images/first-screen-android.png" width="40%" height="40%">
-    <img align="right" src="images/first-screen-iphone.png" width="40%" height="40%">   
+    <img src="images/first-screen-android.png" width="40%" height="40%">
+    <img src="images/first-screen-iphone.png" width="40%" height="40%">   
 </div>
 
 ## 添加一个新的页面
