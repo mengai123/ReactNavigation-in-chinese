@@ -41,7 +41,7 @@
 
 * [Nesting Navigators](Getting%20Started/Nesting%20Navigators.md)（已翻译）
 
-* [Configuring Headers](Getting%20Started/Configuring%20Headers.md)（未翻译）
+* [Configuring Headers](Getting%20Started/Configuring%20Headers.md)（已翻译）
 
 
 
