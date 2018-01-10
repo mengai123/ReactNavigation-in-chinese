@@ -108,8 +108,11 @@ const styles = StyleSheet.create({
 
 现在iPhone和Android应用程序应该会显示相同的页面：
 
+<img align="left" src="images/first-screen-android.png" width="40%" height="40%">
+<img align="right" src="images/first-screen-iphone.png" width="40%" height="40%">
 
 
+## 添加一个新的页面
 
 
 
