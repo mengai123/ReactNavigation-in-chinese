@@ -87,10 +87,32 @@ const SimpleApp = StackNavigator({
 
 ## 在组件中嵌套导航器
 
+有时需要对包含在组件中的导航器进行嵌套。这在导航器只占用屏幕一部分的情况下非常有用。为了将子导航器连接到导航树中，子导航器需要使用父导航器的`navigation`属性。
+```javascript
+const SimpleApp = StackNavigator({
+  Home: { screen: NavigatorWrappingScreen },
+  Chat: { screen: ChatScreen },
+});
+```
+
+在这种情况下，`NavigatorWrappingScreen`不是一个导航器，它只是将导航器作为其渲染的一部分。
+> 译注：`NavigatorWrappingScreen`代表组件，其中包含一个导航器。
+
+```javascript
+class NavigatorWrappingScreen extends React.Component {
+  render() {
+    return (
+      <View>
+        <SomeComponent/>
+        <MainScreenNavigator/>
+      </View>
+    );
+  }
+}
+```
 
 
-
-
+如果此导航器渲染空白页面，就把
 
 
 
