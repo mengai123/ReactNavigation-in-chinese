@@ -113,6 +113,19 @@ class NavigatorWrappingScreen extends React.Component {
 如果上述代码运行后，界面是空白，就把`<View>`改成`<View style={{flex: 1}}>`。
 
 
-要把`MainScreenNavigator`连接到
+要把`MainScreenNavigator`连接到导航树中，我们将它的`router`赋值给wrapping组件，即:`NavigatorWrappingScreen`。这将使`NavigatorWrappingScreen`感知导航动作，告诉父导航器向下传递导航对象。由于`NavigatorWrappingScreen`的`router`被子导航器的`router`覆盖，子导航器将接收到想要的导航事件。
 
 
+```javascript
+class NavigatorWrappingScreen extends React.Component {
+  render() {
+    return (
+      <View>
+        <SomeComponent/>
+        <MainScreenNavigator navigation={this.props.navigation}/>
+      </View>
+    );
+  }
+}
+NavigatorWrappingScreen.router = MainScreenNavigator.router;
+```
