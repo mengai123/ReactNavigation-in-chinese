@@ -189,5 +189,55 @@ export const SimpleApp = StackNavigator({
 
 ## 传递参数
 
+硬编码写死`ChatScreen`的标题方式有点不太好，如果我们能够传递一个名字来渲染，将会更有用，让我们来这样做。
 
+除了在导航函数中指定目标`routeName`外，还可以向新路由传递参数。首先，我们来编辑`HomeScreen`组件，传递一个`user`给路由。
 
+```javascript
+class HomeScreen extends React.Component {
+  static navigationOptions = {
+    title: 'Welcome',
+  };
+  render() {
+    const { navigate } = this.props.navigation;
+    return (
+      <View>
+        <Text>Hello, Chat App!</Text>
+        <Button
+          onPress={() => navigate('Chat', { user: 'Lucy' })}
+          title="Chat with Lucy"
+        />
+      </View>
+    );
+  }
+}
+```
+
+然后我们可以编辑我们的`ChatScreen`组件，来显示通过路由传入的`user`参数：
+```javascript
+class ChatScreen extends React.Component {
+  // Nav options can be defined as a function of the screen's props:
+  static navigationOptions = ({ navigation }) => ({
+    title: `Chat with ${navigation.state.params.user}`,
+  });
+  render() {
+    // The screen's current route is passed in to `props.navigation.state`:
+    const { params } = this.props.navigation.state;
+    return (
+      <View>
+        <Text>Chat with {params.user}</Text>
+      </View>
+    );
+  }
+}
+```
+现在，当你导航到`Chat`页面时，你就可以看到上述的标题。尝试改变`HomeScreen`里的`user`参数，看看会发生什么！
+
+<br>
+
+<div>
+    <img src="https://reactnavigation.org/assets/examples/first-navigation-android.png" width="40%" height="40%">
+    <img src="https://reactnavigation.org/assets/examples/first-navigation-iphone.png" width="40%" height="40%">   
+</div>
+
+<br>
