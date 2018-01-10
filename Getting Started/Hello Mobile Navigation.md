@@ -42,6 +42,8 @@ npm start
   <img src="images/iOS@2x.png" width="40%" height="40%">
 </div>
 
+<br>
+<br>
 
 我们希望在iOS和Android上代码共享，所以删除`index.js`里的内容（如果你使用的是0.49之前的React Native，你需要删除`index.ios.js`和`index.android.js`里的内容），取而代之的是`import './App';`。此后，为了实现应用，需要创建新的文件`App.js`（如果你使用的是`create-react-native-app`命令创建的应用，这一步已经自动完成了）。
 
@@ -110,13 +112,71 @@ const styles = StyleSheet.create({
 界面的`title`是可以在静态对象`navigationOptions`中配置的，其中可以设置多个选项来配置导航器中页面的呈现方式。
 
 现在iPhone和Android应用程序应该会显示相同的页面：
+<br>
 
 <div align="center">
     <img src="images/first-screen-android.png" width="40%" height="40%">
     <img src="images/first-screen-iphone.png" width="40%" height="40%">   
 </div>
 
+<br>
+
 ## 添加一个新的页面
+
+接下来，在我们的`App.js`文件中，添加一个新页面，叫做：`ChatScreen`，把它定义在`HomeScreen`的下面：
+```javascript
+// ...
+
+class HomeScreen extends React.Component {
+    //...
+}
+
+class ChatScreen extends React.Component {
+  static navigationOptions = {
+    title: 'Chat with Lucy',
+  };
+  render() {
+    return (
+      <View>
+        <Text>Chat with Lucy</Text>
+      </View>
+    );
+  }
+}
+
+```
+
+然后，我们在`HomeScreen`组件中添加一个按钮，从而可以跳转到`ChatScreen`：跳转需要使用`navigate`提供的方法（`navigate`是界面的`navigation`的一个属性），通过给方法传入一个目标`routeName`进行跳转，在这里，我们的目标界面是`Chat`。
+```javascript
+class HomeScreen extends React.Component {
+  static navigationOptions = {
+    title: 'Welcome',
+  };
+  render() {
+    const { navigate } = this.props.navigation;
+    return (
+      <View>
+        <Text>Hello, Chat App!</Text>
+        <Button
+          onPress={() => navigate('Chat')}
+          title="Chat with Lucy"
+        />
+      </View>
+    );
+  }
+}
+```
+> （不要忘记从react-native导入View和Button: `import { AppRegistry, Text, View, Button } from 'react-native';`）
+
+到此，任务还没有完成，我们还需要在`StackNavigator`中注册`Chat`，像下面这样：
+```javascript
+export const SimpleApp = StackNavigator({
+  Home: { screen: HomeScreen },
+  Chat: { screen: ChatScreen },
+});
+```
+
+现在你可以导航到你的新页面，并且能够返回:
 
 
 
