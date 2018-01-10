@@ -181,11 +181,13 @@ export const SimpleApp = StackNavigator({
 <br>
 
 <div align="center">
-    <img src="images/navigate-to-chat-android.gif" width="40%" height="40%">
-    <img src="images/navigate-to-chat-ios.gif" width="40%" height="40%">   
+    <img src="https://reactnavigation.org/assets/examples/first-navigation-android.png" width="40%" height="40%">
+    <img src="https://reactnavigation.org/assets/examples/first-navigation-iphone.png" width="40%" height="40%">   
 </div>
 
 <br>
+
+![www](images/navigate-to-chat-ios.gif)
 
 ## 传递参数
 
