@@ -38,8 +38,8 @@ npm start
 确认你能成功看到在iOS/Android上运行的示例应用程序：
 
 <div>
-  <img src="images/Android@2x.png" width="40%" height="40%">
-  <img src="images/iOS@2x.png" width="40%" height="40%">
+  <img src="https://reactnavigation.org/assets/examples/bare-project-android.png" width="40%" height="40%">
+  <img src="https://reactnavigation.org/assets/examples/bare-project-iphone.png" width="40%" height="40%">
 </div>
 
 <br>
@@ -115,8 +115,8 @@ const styles = StyleSheet.create({
 <br>
 
 <div>
-    <img src="images/first-screen-android.png" width="40%" height="40%">
-    <img src="images/first-screen-iphone.png" width="40%" height="40%">   
+    <img src="https://reactnavigation.org/assets/examples/first-screen-android.png" width="40%" height="40%">
+    <img src="https://reactnavigation.org/assets/examples/first-screen-iphone.png" width="40%" height="40%">   
 </div>
 
 <br>
