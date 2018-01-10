@@ -39,7 +39,6 @@ npm start
 
 
 <figure class="half">
-    <img src="images/bare-project-iphone.png" width="50%" height="50%">
-    <img src="images/bare-project-android.png" width="50%" height="50%">  
+    <img src="images/Android@2x.png" width="40%" height="40%"><img src="images/iOS@2x.png" width="40%" height="40%">  
 </figure>
 
