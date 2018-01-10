@@ -10,10 +10,12 @@
 
 本人英语水平和技术水平有限，难免会出现错误或不合理地方，欢迎Issues。
 
+<br>
 **另外**：由于是本人一人翻译，思维难免有局限，需要一名小伙伴帮忙校对，现征求一位喜欢`React Navigation`组件的小伙伴，与我一起努力，完成翻译，欢迎联系上方QQ。
 
 如果翻译对你有帮助，欢迎右上角给摁个Star :grinning:
 
+<br>
 转载请标明出处
 
 ---
@@ -31,7 +33,7 @@
 
 * [Quick Start](Getting%20Started/Quick%20Start.md)（已翻译）
 
-* [Hello Mobile Navigation](Getting%20Started/Hello%20Mobile%20Navigation.md)（未翻译）
+* [Hello Mobile Navigation](Getting%20Started/Hello%20Mobile%20Navigation.md)（已翻译）
 
 * [Nesting Navigators](Getting%20Started/Nesting%20Navigators.md)（未翻译）
 
