@@ -114,7 +114,7 @@ const styles = StyleSheet.create({
 现在iPhone和Android应用程序应该会显示相同的页面：
 <br>
 
-<div align="center">
+<div>
     <img src="images/first-screen-android.png" width="40%" height="40%">
     <img src="images/first-screen-iphone.png" width="40%" height="40%">   
 </div>
@@ -180,14 +180,12 @@ export const SimpleApp = StackNavigator({
 
 <br>
 
-<div align="center">
+<div>
     <img src="https://reactnavigation.org/assets/examples/first-navigation-android.png" width="40%" height="40%">
     <img src="https://reactnavigation.org/assets/examples/first-navigation-iphone.png" width="40%" height="40%">   
 </div>
 
 <br>
-
-![www](images/navigate-to-chat-ios.gif)
 
 ## 传递参数
 
