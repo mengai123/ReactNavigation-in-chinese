@@ -60,7 +60,7 @@ For the purpose of convenience, the built-in navigators have this ability becaus
 
 顶层的导航器接收下面的参数：
 ```javascript
-  onNavigationStateChange(prevState, newState, action)
+onNavigationStateChange(prevState, newState, action)
 ```
 
 每当被`navigator`管理的导航器的状态变化时，都会调用上面的函数。它接收导航的历史状态、新状态以及造成状态改变的动作。默认情况下，它将状态更改打印到控制台。
