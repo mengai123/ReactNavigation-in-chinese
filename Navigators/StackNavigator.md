@@ -82,9 +82,9 @@ StackNavigator({
     * `card` - 使用标准的iOS和Android屏幕切换。默认的。
     * `modal` - 使屏幕从底部滑入，在iOS上，这是一种常见的模式。只适用于iOS，对Android没有任何影响。
 * `headerMode` - 指定导航条如何渲染：
-    * `float` - 在页面顶部渲染一个单一的导航条，当页面更改时，有浮入动画。这是iOS上的常见模式。
-    * `screen` - 每个页面都有一个依附的导航条，导航条与页面一起淡入淡出。这是Android上常见的模式。
-    * `none` - 不渲染导航条
+    * `float` - 在页面顶部渲染一个单一的导航条，当页面更改时，有浮入动画。这是iOS上的常见模式。
+    * `screen` - 每个页面都有一个依附的导航条，导航条与页面一起淡入淡出。这是Android上常见的模式。
+    * `none` - 不渲染导航条
 
 * `cardStyle` - 使用此参数去覆盖或扩展栈中单个卡片(页面)的默认样式。
 * `transitionConfig` -  函数返回一个与页面默认跳转动画合并后的对象（查看[类型定义](https://github.com/react-community/react-navigation/blob/master/src/TypeDefinition.js)中的TransitionConfig）。提供的函数将传递以下参数：
