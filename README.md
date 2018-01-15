@@ -49,7 +49,7 @@
 
 * [Intro to Navigators](Navigators/Intro%20to%20Navigators.md)（已翻译）
 
-* [StackNavigator](Navigators/StackNavigator.md)（未翻译）
+* [StackNavigator](Navigators/StackNavigator.md)（已翻译）
 
 * [TabNavigator](Navigators/TabNavigator.md)（未翻译）
 
