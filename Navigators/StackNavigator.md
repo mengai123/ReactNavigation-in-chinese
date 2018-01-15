@@ -132,8 +132,99 @@ iOS上返回按钮使用的标题字符串，设为`null`不显示返回标题�
 
 导航栏的样式对象
 
+`headerTitleStyle`
 
+标题组件的样式对象
 
+`headerBackTitleStyle`
 
+返回标题的样式对象
 
+`headerTintColor`
 
+导航栏的色调
+
+`headerPressColorAndroid`
+
+材质纹波的颜色（仅适用于Android> = 5.0）
+
+`gesturesEnabled`
+
+是否可以使用手势来滑动返回。在iOS上默认为true，在Android上为false。
+
+`gestureResponseDistance`
+
+该对象用来设置从屏幕边缘开始触摸的距离，以识别手势。它具有以下属性：
+ - `horizontal` - number型，水平方向的距离。默认为25。
+ - `vertical` - number型，垂直方向的距离。默认为135。
+
+`gestureDirection`
+
+字符串:用来覆写关闭手势的方向。`default`代表正常行为，`inverted`代表从右向左滑动。
+
+### Navigator Props
+
+使用`StackNavigator(...)`创建的导航器组件，带有一下参数：
+ - `screenProps` - 将其他选项传递给子页面，例如：
+ 
+```javascript
+ const SomeStack = StackNavigator({
+  // config
+});
+
+<SomeStack
+  screenProps={/* this prop will get passed to the screen components as this.props.screenProps */}
+/>
+```
+ 
+### 例子
+
+请参阅示例[SimpleStack.js](https://github.com/react-community/react-navigation/tree/master/examples/NavigationPlayground/js/SimpleStack.js)和[ModalStack.js](https://github.com/react-community/react-navigation/tree/master/examples/NavigationPlayground/js/ModalStack.js)，你可以将其作为[NavigationPlayground](https://github.com/react-community/react-navigation/tree/master/examples/NavigationPlayground)应用程序的一部分在本地运行。
+
+在你手机上访问[我们的epxo demo](https://exp.host/@react-navigation/NavigationPlayground)，你可以直接查看这些实例。
+
+您可以通过访问我们的展会演示直接在您的手机上查看这些示例。
+
+#### 自定义屏幕跳转的模态StackNavigator
+
+```javascript
+const ModalNavigator = StackNavigator(
+ {
+   Main: { screen: Main },
+   Login: { screen: Login },
+ },
+ {
+   headerMode: 'none',
+   mode: 'modal',
+   navigationOptions: {
+     gesturesEnabled: false,
+   },
+   transitionConfig: () => ({
+     transitionSpec: {
+       duration: 300,
+       easing: Easing.out(Easing.poly(4)),
+       timing: Animated.timing,
+     },
+     screenInterpolator: sceneProps => {
+       const { layout, position, scene } = sceneProps;
+       const { index } = scene;
+
+       const height = layout.initHeight;
+       const translateY = position.interpolate({
+         inputRange: [index - 1, index, index + 1],
+         outputRange: [height, 0, 0],
+       });
+
+       const opacity = position.interpolate({
+         inputRange: [index - 1, index - 0.99, index],
+         outputRange: [0, 1, 1],
+       });
+
+       return { opacity, transform: [{ translateY }] };
+     },
+   }),
+ }
+);
+```
+
+导航栏的过渡也可以使用`transitionConfig`的属性`headerLeftInterpolator`、`headerTitleInterpolator`和`headerRightInterpolator`进行配置。
