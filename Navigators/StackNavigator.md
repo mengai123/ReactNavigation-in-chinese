@@ -97,4 +97,43 @@ StackNavigator({
 ### Screen Navigation Options
 
 `title`
-作为`headerTitle`的一种备选
+
+作为`headerTitle`的备选参数(译注：当`headerTitle`与`title`同时存在时，优先使用`headerTitle`)。另外，也会作为`tabBarLabel`(如果嵌套使用`TabNavigator`)和`drawerLabel`(如果嵌套使用`DrawerNavigator`)的备选参数。
+
+`header`
+
+React元素或者一个传入`HeaderProps`参数返回React元素的函数，用来渲染一个导航器。设置为`null`隐藏导航器。
+
+`headerTitle`
+
+字符串、React元素或React组件，供导航条使用。默认为场景的标题。当传入的是组件时，此组件接收`allowFontScaling`、`style`和`children`参数。标题字符串被透传给`children`。
+
+`headerTitleAllowFontScaling`
+
+标题标题字体是否应缩放以遵从文本大小辅助设置。默认为true。
+
+`headerBackTitle`
+
+iOS上返回按钮使用的标题字符串，设为`null`不显示返回标题。默认为前一个页面的`headerTitle`。
+
+`headerTruncatedBackTitle`
+
+当返回按钮的`headerBackTitle`超出屏幕时，将会使用此字符串。默认为"Back"。
+
+`headerRight`
+
+显示在导航栏右侧的React元素。
+
+`headerLeft`
+
+显示在导航栏左侧的React元素或者组件。当使用的是组件时，在该组件被渲染时，它将接收一系列参数(`onPress`、`title`、`titleStyle`以及其他参数 - 查看`Header.js`文件浏览完整的参数列表)
+
+`headerStyle`
+
+导航栏的样式对象
+
+
+
+
+
+
