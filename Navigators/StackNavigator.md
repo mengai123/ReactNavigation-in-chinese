@@ -168,7 +168,7 @@ iOS上返回按钮使用的标题字符串，设为`null`不显示返回标题�
  - `screenProps` - 将其他选项传递给子页面，例如：
  
 ```javascript
- const SomeStack = StackNavigator({
+const SomeStack = StackNavigator({
   // config
 });
 
