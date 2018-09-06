@@ -1,5 +1,7 @@
 # React Navigation组件中文翻译
 
+### 抱歉，还没翻译完，英文官网文档就改版了，尴尬😓，只能太监了。
+
 内容为[React Navigation官方文档](https://reactnavigation.org/docs/intro/)中文翻译。
 
 #### 说明：
